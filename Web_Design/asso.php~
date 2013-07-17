@@ -24,13 +24,8 @@
                     <li><a href="map.php">Maps</a></li>
                   </ul>
                     </li>
-                 <li class="sub-menu"><a href="help.php">Help</a>
-               <ul>
-                    <li><a href="weblink.php">Web-Links</a></li>
-                   <li><a href="asso.php">Trade Associations</a></li>
-                   
-                  </ul>
-                </li>
+                <li><a href="help.php">Help</a></li>
+             
               </ul>
                 </div>
           </div>

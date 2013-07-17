@@ -1,5 +1,5 @@
 	<head>
-	<title>Cosas</title>
+	<title>Export-Import Guide</title>
 	<meta charset="utf-8">
 	<link rel="icon" href="img/slogo.gif" type="image/x-icon">
 	<link rel="shortcut icon" href="img/slogo.gif" type="image/x-icon" />

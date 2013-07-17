@@ -10,7 +10,7 @@
           <div class="span12">
         <div class="navbar navbar_">
               <div class="container">
-            <h1 class="brand brand_"><a href="navik.html"><img alt="" src="img/logo.gif"> </a></h1>
+            <h1 class="brand brand_"><a href="index.php"><img alt="" src="img/logo.gif"> </a></h1>
             <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
             <div class="nav-collapse nav-collapse_  collapse">
                   <ul class="nav sf-menu">
@@ -24,8 +24,13 @@
                     <li><a href="map.php">Maps</a></li>
                   </ul>
                     </li>
-                <li><a href="help.php">Help</a></li>
-             
+                 <li class="sub-menu"><a href="help.php">Help</a>
+               <ul>
+                    <li><a href="weblink.php">Web-Links</a></li>
+                   <li><a href="asso.php">Trade Associations</a></li>
+                   
+                  </ul>
+                </li>
               </ul>
                 </div>
           </div>
@@ -52,7 +57,7 @@
         <div class="block-slogan">
               <h2>Welcome!</h2>
               <div>
-            <p><a href="index.html" target="_blank" class="link-1">Click here</a> for more info about this  web app NAVIK.</p>
+            
           </div>
             </div>
       </div>

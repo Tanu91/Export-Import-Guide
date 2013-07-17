@@ -17,75 +17,62 @@
                 <li ><a href="index.php">Home</a></li>
 		<li><a href="about.php">About</a></li>
 		
-                <li class="sub-menu, active"><a href="service.php">Services</a>
+                <li class="sub-menu"><a href="service.php">Services</a>
                       <ul>
                     <li><a href="trade.php">Trade</a></li>
-			<li><a href="tarrif.php">Tarrif</a></li>
+                   <li><a href="tarrif.php">Tarrif</a></li>
                     <li><a href="map.php">Maps</a></li>
                   </ul>
                     </li>
-                <li class="sub-menu"><a href="help.php">Help</a>
+                 <li class="sub-menu"><a href="help.php">Help</a>
                <ul>
                     <li><a href="weblink.php">Web-Links</a></li>
                    <li><a href="asso.php">Trade Associations</a></li>
                    
                   </ul>
                 </li>
-             
+                
               </ul>
                 </div>
           </div>
             </div>
       </div>
         </div>
+        </header>
+<div class="bg-content">
+      <div class="container">
+    <div class="row">
+          <div class="span12"> 
+
+         <!--============================== content =================================-->
+      
+      <div id="content"><div class="ic">More Website Templates @ TemplateMonster.com. November19, 2012!</div>
+
+  <h3>Web Links</h3>
+          <ul class="list extra extra1">           
+            <li><a href="http://dgft.gov.in"><h5>DGFT</h5></a></li>
+            <li><a href="http://cochinport.com"><h5>Cochin Port</h5></a></li>
+            <li><a href="http://chennaiport.gov.in"><h5>Chennai Port</h5></a></li>
+            <li><a href="http://ennoreport.gov.in"><h5>Ennore Port</h5></a></li>
+            <li><a href="http://jnport.gov.in"><h5>Jawaharlal Nehru Port</h5></a></li>
+            <li><a href="http://kandlaport.gov.in"><h5>Kandla Port</h5></a></li>
+            <li><a href="http://kolkataporttrust.gov.in"><h5>Kolkata Port</h5></a></li>
+            <li><a href="http://newmangalore-port.com/‎"><h5>Mangalore Port</h5></a></li>
+            <li><a href="http://mptgoa.com/‎"><h5>Mormugao Port</h5> </a></li>
+            <li><a href="http://mumbaiport.gov.in"><h5>Mumbai Port</h5></a></li>
+	    <li><a href="http://paradipport.gov.in"><h5>Paradip Port</h5></a></li>                     
+      </ul>
+<br><br><br><br><br>
+
+</div>
+<!--============================== footer =================================-->
+<?php include 'footer.tpl.php'; ?>
+</body>
+</html>
+   
   </div>
     </header>
 <div class="bg-content">
       <div class="container">
     <div class="row">
           <div class="span12"> 
-      <!--============================== content =================================-->
-      
-      <div id="content"><div class="ic">More Website Templates @ TemplateMonster.com. November19, 2012!</div>
-    <div class="container">
-          <div class="row">
-        <article class="span12">
-              <h3>Services</h3>
-            </article>
-        <div class="clear"></div>
-        <ul class="thumbnails thumbnails-1 list-services">
-              <li class="span4">
-            <div class="thumbnail thumbnail-1"> <img  src="imgs/Export.jpg" alt="">
-                  <section> <a href="trade.php" class="link-1">TRADE</a>
-                
-              </section>
-                </div>
-          </li>
-              <li class="span4">
-            <div class="thumbnail thumbnail-1"> <img  src="imgs/import.jpg" alt="">
-                  <section> <a href="tarrif.php" class="link-1">TARRIF</a>
-                
-              </section>
-                </div>
-          </li>
-              <li class="span4">
-            <div class="thumbnail thumbnail-1"> <img  src="imgs/map.jpg" alt="">
-                  <section> <a href="map.php" class="link-1">MAPS</a>
-                
-              </section>
-                </div>
-          </li>
-             
-             
-             
-            </ul>
-      </div>
-        </div>
-  </div>
-    </div>
-
-
-<!--============================== footer =================================-->
-<?php include 'footer.tpl.php'; ?>
-</body>
-</html>

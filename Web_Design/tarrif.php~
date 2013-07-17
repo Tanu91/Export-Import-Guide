@@ -44,7 +44,7 @@
       
 <body>
   <div id="content">
-    <div class="container">
+    <div class="container"<br><br><br><br>
 <form action="" method="post">
 <input type="number" placeholder="ITC(HS)" name ="code">
    
@@ -70,29 +70,29 @@ echo "<input type='number' value='$bd' name ='code1'>";
 echo "</form>";*/
 $bd=($av*$bd)/100;
 echo "<br>";
-echo "Basic Duty of Customs=" .$bd;
+echo "Basic Duty of Customs=                         &nbsp;" .$bd;
 $bd_pref=$row['basic_pref'];
 $bd1=($av*$bd_pref)/100;
 $bd_amt=$bd+$bd_pref;
 echo "<br>";
-echo "Basic Duty Pref =" .$bd_amt;
+echo "Basic Duty Pref =                               &nbsp;" .$bd_amt;
 $cvd=$row['cvd'];
 $cvd_amt=($av+$bd_amt)*($cvd/100);
 echo "<br>";
-echo "Additional Duty of Customs(CVD)= ".$cvd_amt;
+echo "Additional Duty of Customs(CVD)=              &nbsp;".$cvd_amt;
 $edu_cess=0;
 $edu_amt=$cvd_amt*($edu_cess/100);
 $cus_cess=$row['cess'];
 $cus_amt=($bd_amt+$cvd_amt+$edu_amt)*($cus_cess/100);
 echo "<br>";
-echo "Customs Education Cess= ". $cus_amt;
+echo "Customs Education Cess=                         &nbsp; ". $cus_amt;
 $spl_cvd=$row['spl_cvd'];
 $spl_cvd_amt=($av+$bd_amt+$cvd_amt+$edu_amt+$cus_amt)*($spl_cvd/100);
 echo "<br>";
-echo " Special Additional Duty of Customs(Spl.CVD) = ".$spl_cvd_amt;
+echo " Special Additional Duty of Customs(Spl.CVD) =              &nbsp;".$spl_cvd_amt;
 $total=$bd_amt+$cvd_amt+$edu_amt+$cus_amt+$spl_cvd_amt;
 echo "<br>";
-echo "Total Customs Duty = ".$total;
+echo "Total Customs Duty=                                      &nbsp; ".$total;
 
 
 /*echo "<table>";

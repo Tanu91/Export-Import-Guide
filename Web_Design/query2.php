@@ -12,23 +12,28 @@
           <div class="span12">
         <div class="navbar navbar_">
               <div class="container">
-            <h1 class="brand brand_"><a href="index.html"><img alt="" src="imgs/logo.gif"> </a></h1>
+            <h1 class="brand brand_"><a href="index.php"><img alt="" src="imgs/logo.gif"> </a></h1>
             <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
             <div class="nav-collapse nav-collapse_  collapse">
                   <ul class="nav sf-menu">
-                <li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About</a></li>
+                <li><a href="index.php">Home</a></li>
+		<li><a href="about.php">About</a></li>
 		
                 <li class="sub-menu, active"><a href="service.html">Services</a>
                       <ul>
-                    <li><a href="import.html">Import</a></li>
-                    <li><a href="export.html">Export</a></li>
-                    <li><a href="map.html">Maps</a></li>
+                    <li><a href="trade.php">Trade</a></li>
+                    <li><a href="tarrif.php">Tarrif</a></li>
+                    <li><a href="map.php">Maps</a></li>
                   </ul>
                     </li>
-                <li><a href="help.html">Help</a></li>
+                 <li class="sub-menu"><a href="help.php">Help</a>
+               <ul>
+                    <li><a href="weblink.php">Web-Links</a></li>
+                   <li><a href="asso.php">Trade Associations</a></li>
+                   
+                  </ul>
+                </li>
                
-                <li><a href="data.html">Data</a></li>
               </ul>
                 </div>
           </div>
@@ -104,7 +109,7 @@ while($row1=mysql_fetch_array($query1))
 		
 	}
 	
-		echo "<div id='no-more-tables'><table class='table table-hover'><table >";
+		echo "<div id='no-more-tables'><table class='table table-hover'>";
 		echo "<div id='no-more-tables'> <thead>";
 		
 		echo"<div id='no-more-tables'><th>ITC(HS)</th>";

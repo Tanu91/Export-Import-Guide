@@ -1,0 +1,205 @@
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</td>
+</tr>
+<tr>
+<td>
+<br />
+<table id="ctl00_uxContentPlaceHolder_tblDutyCalculator" width="90%" border="0" cellpadding="10" cellspacing="1" bgcolor="#E6EFF7" align="center">
+<tr>
+<td align="left" valign="top" bgcolor="#E6EFF7" nowrap="nowrap" colspan="4">
+<strong><font size="5">Import Duty Calculator</font></strong>
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" bgcolor="#FFFFFF" nowrap="nowrap">
+<strong><font size="3">Enter CIF Value in Rs.</font></strong>
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF" nowrap="nowrap" colspan="2">
+<input name="ctl00$uxContentPlaceHolder$tbCIF" type="text" size="18" id="ctl00_uxContentPlaceHolder_tbCIF" />
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF" nowrap="nowrap">
+<input type="submit" name="ctl00$uxContentPlaceHolder$btnCalculateDuty" value="Calculate Custom Duty" onclick="javascript:CalculateCustomDuty('ctl00_uxContentPlaceHolder_tbBasicDuty','ctl00_uxContentPlaceHolder_tbAddlDuty','ctl00_uxContentPlaceHolder_tbCIF','ctl00_uxContentPlaceHolder_tbBasicDutyPref','ctl00_uxContentPlaceHolder_tbSplAddlDuty','ctl00_uxContentPlaceHolder_tbCentralExciseEducationCessDuty','ctl00_uxContentPlaceHolder_tbEducationCessDuty','ctl00_uxContentPlaceHolder_btnCalculateDuty');return CancelEventBubble(event);" id="ctl00_uxContentPlaceHolder_btnCalculateDuty" style="font-size:Large;" />
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+Value and Duty Description
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+Custom Duty Rates
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+Calculated Amount
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+Formula
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+Assesable Value(AV)
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+&nbsp;
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<label id="AssesableValue">
+</label>
+&nbsp;
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+CIF Value + Landing Charges (@1% of CIF Value)
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+Basic Duty of Customs (%)
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<input name="ctl00$uxContentPlaceHolder$tbBasicDuty" type="text" value="30" size="5" id="ctl00_uxContentPlaceHolder_tbBasicDuty" />
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<label id="BasicDuty">
+</label>
+&nbsp;
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+(AV x BD rate) / 100
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+Basic Duty Pref (%)
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<input name="ctl00$uxContentPlaceHolder$tbBasicDutyPref" type="text" size="5" id="ctl00_uxContentPlaceHolder_tbBasicDutyPref" />
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<label id="BasicDutyPref">
+</label>
+&nbsp;
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+(AV x BD Pref rate) / 100
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+Additional Duty of Customs(CVD) (Including Cess, if any) (%)
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<input name="ctl00$uxContentPlaceHolder$tbAddlDuty" type="text" value="0" size="5" id="ctl00_uxContentPlaceHolder_tbAddlDuty" />
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<label id="AddlDuty">
+</label>
+&nbsp;
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+(AV + BD. Amt.) x CVD rate / 100
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+Central Excise Education Cess (%)
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<input name="ctl00$uxContentPlaceHolder$tbCentralExciseEducationCessDuty" type="text" size="5" id="ctl00_uxContentPlaceHolder_tbCentralExciseEducationCessDuty" />
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<label id="CentralExciseEducationCess">
+</label>
+&nbsp;
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+(CVD Amt.) x Central Excise Edu. Cess Rate / 100
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+Customs Education Cess (if any) (%)
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<input name="ctl00$uxContentPlaceHolder$tbEducationCessDuty" type="text" value="3" size="5" id="ctl00_uxContentPlaceHolder_tbEducationCessDuty" />
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<label id="EducationCess">
+</label>
+&nbsp;
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+(BD Amt. + CVD Amt. + Edu. Cess. Amt.) x Custom Edu. Cess Rate / 100
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+Special Additional Duty of Customs(Spl.CVD) (if any) (%)
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<input name="ctl00$uxContentPlaceHolder$tbSplAddlDuty" type="text" value="4" size="5" id="ctl00_uxContentPlaceHolder_tbSplAddlDuty" />
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<label id="SplAddlDuty">
+</label>
+&nbsp;
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+(AV + BD Amt. + CVD Amt. + Edu. Cess. Amt. + Custom Edu. Cess Amt.) x Spl. CVD Rate
+/ 100
+</td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#FFFFFF" align="right" colspan="2">
+<b><font size="3">Total Customs Duty</font></b>
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<b><font size="3">
+<label id="TotalDutyPayable">
+</label>
+</font></b>&nbsp;
+</td>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+BD Amt. + CVD Amt. + Edu. Cess Amt. + Custom Edu. Cess Amt. + Spl. CVD Amt.
+</td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#FFFFFF" colspan="4" align="center">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="ind10-t indian-customs-dgft RadEDomMouseOver">
+</div>
+<div style="float: left;">
+</div>
+</div>
+</div>
+<div id="ctl00_pnlRightPanel" class="mright">
+<div class="testimonial">
+<div class="test-con">
+<div class="clr">
+<div class="clra1outer"></div>
+</div>
+<div class="tbtopsquare"></div>
+<div class="clr">
+<div class="clra2outer"></div>
+</div>
+</div>
+<div class="tbmidsquare">
+<div class="gb">
+<div style="position: absolute; z-index: 5; left: 0px; visibility: hidden; top: 0px; height: 0px;">
+</div>
+<div style="height: 184px; width: 200px; vertical-align: top; margin: -40px 0px 0px -4px;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4131535268179756";
+/* 200x200, created 4/21/10 */
+google_ad_slot = "7283882213";
+google_ad_width = 200;
+google_ad_height = 200;
+//-->
+</script> 

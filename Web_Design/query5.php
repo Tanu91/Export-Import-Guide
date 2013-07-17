@@ -11,7 +11,7 @@
           <div class="span12">
         <div class="navbar navbar_">
               <div class="container">
-            <h1 class="brand brand_"><a href="index.html"><img alt="" src="imgs/logo.gif"> </a></h1>
+            <h1 class="brand brand_"><a href="index.php"><img alt="" src="imgs/logo.gif"> </a></h1>
             <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
             <div class="nav-collapse nav-collapse_  collapse">
                   <ul class="nav sf-menu">
@@ -22,11 +22,17 @@
                       <ul>
                     <li><a href="trade.php">Trade</a></li>
                     <li><a href="tarrif.php">Tarrif</a></li>
-                    <li><a href="map.html">Maps</a></li>
+                    <li><a href="map.php">Maps</a></li>
                   </ul>
                     </li>
              
-                <li><a href="data.html">Data</a></li>
+                 <li class="sub-menu"><a href="help.php">Help</a>
+               <ul>
+                    <li><a href="weblink.php">Web-Links</a></li>
+                   <li><a href="asso.php">Trade Associations</a></li>
+                   
+                  </ul>
+                </li>
               </ul>
                 </div>
           </div>
